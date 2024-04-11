@@ -7,9 +7,16 @@
 </head>
 <body>
     <h1>Dados do Servidor</h1>
-    <?php 
+    <?=
        phpinfo();
     ?>
+    <!-- 
+    <//?php      ?>   super tag
+    <//?         ?>   short open tag //tem que configurar servidor
+    <//%         %>   ASP tag        //tem que configurar servidor
+    <//?=        ?>   short tag PHP //substitui echo ou print
+
+    -->
     
 </body>
 </html>
