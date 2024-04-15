@@ -7,12 +7,7 @@
     <link rel="stylesheet" href="style-treino.css">
 </head>
 <body>
-    <?php 
-        //Capturando os dados do formulario retroalimentado
-        $valor1 = $_GET["valor1"] ?? 0;
-        $valor2 = $_GET["valor2"] ?? 0;
-        
-    ?>
+    
     <main>
         <form action="<?= $_SERVER['PHP_SELF']?>" method="get">
             <label for="valor1">Valor 1</label>
