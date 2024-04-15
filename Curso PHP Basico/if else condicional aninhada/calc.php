@@ -11,19 +11,26 @@
     <section>
         <p>
             <?php
-            $idade = $_GET["idade"];
+            $peso = $_GET["peso"];
             
-            if ($idade >= 18) {
-                $vota = true;
-                echo "Você tem $idade anos,  portanto pode votar";
-           
-           } else {
-           
-               $vota = false;
-               echo "Você tem $idade anos, portanto não tem idade para votar";
-           
-           }
-           
+            
+            if ($peso <= 50) {
+
+                echo  "muito magro";
+            
+            } else {
+            
+                if ($peso >50 && $peso <=70) {
+            
+                      echo "peso normal";
+            
+                 } else {
+            
+                    echo "acima do peso";
+            
+                 }
+            
+            }
            
             ?>
         </p>
