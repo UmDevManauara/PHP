@@ -12,15 +12,17 @@
     <section>
         <?php
         $cotacao = 5.12;
-        $seuDinheiro = 1000;
+        $seuDinheiro = $_GET["seuDinheiro"];
         // jeito padrao
         // echo "Seu dinheiro atual no valor de R\$" . number_format($seuDinheiro, 2, ",", ".") ." a cotação usada foi $cotacao, o valor em dolar é: \$" . number_format($seuDinheiro/ $cotacao, 2, ",", ".");
 
         //jeito internacional
         $padrao = numfmt_create("pt-BR", NumberFormatter::CURRENCY);
         echo "Seu dinheiro atual no valor de " . numfmt_format_currency($padrao, $seuDinheiro, "BRL") ." a cotação usada foi $cotacao, o valor em dolar é: " . numfmt_format_currency($padrao, $seuDinheiro/ $cotacao, "USD")
-
         ?>
+        <p>
+            <button onclick="javascript:history.go(-1)">Voltar</button>
+         </p>
     </section>
 
 </body>
